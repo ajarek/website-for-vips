@@ -1,0 +1,21 @@
+<%-include('./partials/header')%>
+
+
+<div class="container">
+    <div class=" d-flex align-items-center justify-content-between " ><h1>YOUR SECRET PAGE</h1> <h4 "><%=dane.email%></h4></div>
+   
+    <%-include('./partials/navbar')%>    
+    <div class="d-flex flex-column justify-content-center align-items-center text-white"
+        style="background: url('https://d-tm.ppstatic.pl/kadry/b3/e7/90af6417214e84807f9123fc3473.1000.jpg');background-size: cover;width: 1116px; height: 600px;">
+        <h2>Witaj: <span class=""><%=dane.name%>!!!</h2></span>
+        <h1 class="fs-1">FINANCIAL PLANNERS</h1>
+        
+        <p class="fs-3">You deserve great financial advice and planning services.</p>
+        <div class="input-group mb-3 w-75">
+            <span class="input-group-text text-primary" id="inputGroup-sizing-default">Donate your money to us and you'll make a fortune</span>
+            <input type="text" class="form-control px-4"  aria-describedby="inputGroup-sizing-default" placeholder="1.000.000$">
+            <button class="btn btn-success" type="button" id="button-addon2">Button</button>
+          </div>
+    </div>
+</div>
+<%-include('./partials/footer')%>
